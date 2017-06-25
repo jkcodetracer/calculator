@@ -15,7 +15,6 @@
         android:id="@+id/root"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="fill"
         android:rowCount="6"
         android:columnCount="4"
         android:orientation="horizontal" >
@@ -41,6 +40,30 @@
             android:weightSum="2">
 
             <Button
+                android:text="sin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sin"
+                android:layout_weight="1"
+                android:onClick="onSin"/>
+
+            <Button
+                android:text="("
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Lbracket"
+                android:layout_weight="1"
+                android:onClick="onLbracket"/>
+
+            <Button
+                android:text=")"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Rbracket"
+                android:layout_weight="1"
+                android:onClick="onRbracket"/>
+
+            <Button
                 android:id="@+id/btnClearText"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -60,4 +83,8 @@
         </LinearLayout>
 
     </GridLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>
